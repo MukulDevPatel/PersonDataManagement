@@ -16,5 +16,13 @@ namespace PersonDataManagement
                 Console.WriteLine("Person:" + result.Name + " " + "Address:" + result.Address + " " + "SSN:" + result.SSN);
             }
         }
+        public void RetreiveAllRecordOfAge(List<Person> persons)
+        {
+            var data = persons.Where(x => x.Age > 13 && x.Age < 18).ToList();
+            foreach (var result in data)
+            {
+                Console.WriteLine("Person:" + result.Name + " " + "Address:" + result.Address + " " + "SSN:" + result.SSN);
+            }
+        }
     }
 }

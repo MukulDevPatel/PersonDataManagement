@@ -19,6 +19,8 @@ namespace PersonDataManagement
             list.Add(new Person() { SSN = 10, Name = "j", Address = "x", Age = 15 });
             Operation operation = new Operation();
             operation.RetreiveTopRecordOfAge(list);
+            Console.WriteLine("\nThis is list of between 13 and 18 from list");
+            operation.RetreiveAllRecordOfAge(list);
         }
     }
 }
