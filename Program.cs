@@ -18,7 +18,7 @@ namespace PersonDataManagement
             list.Add(new Person() { SSN = 9, Name = "i", Address = "x", Age = 17 });
             list.Add(new Person() { SSN = 10, Name = "j", Address = "x", Age = 15 });
             Operation operation = new Operation();
-            operation.AllRecords(list);
+            operation.RetreiveTopRecordOfAge(list);
         }
     }
 }
